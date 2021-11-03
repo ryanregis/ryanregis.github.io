@@ -1,0 +1,393 @@
+/* Start of Articles CSS */
+.article-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+}
+
+.article-container>header>nav ul>.articles a {
+    padding: 0 10%;
+    border: 10px ridge var(--blue);
+}
+
+.article-container>header>nav>ul>.articles a:hover {
+    padding: 5px;
+}
+
+.article-container>main {
+    font-family: "Saira";
+    position: relative;
+    top: 15vh;
+    left: 0;
+    margin: 0;
+    padding: 0 5vw;
+    width: 100vw;
+    place-items: center;
+    place-content: center;
+    background-color: var(--gray);
+    height: auto;
+    display: grid;
+    grid-template: 12vh repeat(5, auto) / 100%;
+    grid-template-areas:
+        "title"
+        "article-1"
+        "article-2"
+        "article-3"
+        "article-4"
+        "article-5";
+    gap: 10vh;
+}
+.article-container h2{
+    font-size: 7vmin;
+}
+
+.article-container p,
+.article-container span, ::before {
+    font-size: 3vmin;
+}
+
+.article-container>main>.title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    border: 10px ridge var(--darkblue);
+}
+
+.article-container>main>.title>span{
+    padding: 0;
+    font-size: 6vmin;
+    font-weight: bolder;
+    font-family: Montserrat;
+    color: var(--black);
+    text-shadow: -2px 0px 10px var(--white), 2px 0px 10px var(--white);
+}
+
+.article-container>main article {
+    width: 100%;
+    height: 100%;
+    padding: 2.5%;
+    box-shadow: 0 2px 10px 2px var(--black);
+
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.article-container > main  > article h2{
+    text-shadow: -1px 0px 2px #d2d3c999, 1px 0px 2px #d2d3c999;
+}
+
+.article-container > main  > article p{
+    font-weight: bold;
+    text-shadow: -1px 0px 2px#d2d3c999, 1px 0px 2px#d2d3c999;
+}
+
+.article-container>main .article-1 {
+    grid-area: article-1;
+    background-color: var(--beige);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img-text img-text"
+    "vid vid";
+}
+
+.article-container>main .article-1 img{
+    background: var(--light-gray);
+    border: 5px ridge var(--black);
+    box-shadow: 0 2px 10px 2px var(--black);
+    width: 30vmax;
+    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.article-container> main .article-1 .img-text{
+    grid-area: img-text;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.article-container>main>.article-1 .vid::before{
+    background: var(--light-gray);
+    font-family: "Saira";
+    text-shadow: -1px 0px 1px#d2d3c999, 1px 0px 1px#d2d3c999;
+    font-weight: bold;
+    content: "Christine Ha's Apple Pie Judging from MasterChef Season 3";
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+
+.article-container>main>.article-1 .vid{
+    width: 100%;
+    grid-area: vid;
+    border: 10px ridge var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-container>main>.article-1 .vid>iframe{
+    width: 100%;
+}
+
+
+.article-container>main .article-2 {
+    grid-area: article-2;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background-color: var(--redviolet);
+    grid-template-columns: repeat(5, 20%)/repeat(4, 25%);
+    grid-template-areas: 
+    "h h h h"
+    "img1 text1 text1 text1"
+    "img1 text1 text1 text1"
+    "text2 text2 img2 img2"
+    "text2 text2 img2 img2";
+    gap: 20px;
+}
+
+.article-container>main .article-2 h2{
+    grid-area: h;
+    text-align: center;
+    width: 100%;
+}
+
+.article-container>main .article-2>h2,
+.article-container>main .article-2>.text-1,
+.article-container>main .article-2>.text-2{
+    color:var(--white);
+    text-shadow: -2px 0px 5px var(--black), 2px 0px 5px var(--black);
+}
+.article-container>main> .article-2 .img-1{
+    grid-area: img1;
+    width: 100%;
+}
+.article-container>main> .article-2 .img-2{
+    grid-area: img2;
+    width: 100%;
+}
+
+.article-container>main .article-2 img{
+    border: 5px ridge var(--black);
+    box-shadow: 0 2px 10px 2px var(--black);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.article-container>main .article-2 .text-1{
+    grid-area: text1;
+}
+
+.article-container>main .article-2 .text-2{
+    grid-area: text2;
+}
+
+.article-container>main .article-3 {
+    grid-area: article-3;
+    display: grid;
+    background-color: var(--lightgreen);
+    place-items: center;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "text1 text1 text1"
+    "vid vid vid"
+    "vid vid vid"
+    "img text2 text2"
+    "img text2 text2";
+    gap: 20px;
+}
+
+.article-container>main .article-3 > .img{
+    grid-area: img;
+}
+.article-container>main .article-3 > .img > img{
+    background: var(--light-gray);
+    border: 5px ridge var(--black);
+    box-shadow: 0 2px 10px 2px var(--black);
+    max-height: 100%;
+    max-width: 100%;
+}
+.article-container>main .article-3 > .text-1{
+    text-align: center;
+    grid-area: text1;
+}
+
+.article-container>main .article-3 > .text-2{
+    grid-area: text2;
+}
+.article-container>main .article-3 >.vid::before{
+    background: var(--light-gray);
+    font-family: "Saira";
+    text-shadow: -1px 0px 1px#d2d3c999, 1px 0px 1px#d2d3c999;
+    font-weight: bold;
+    content: "Infamous Gordon Ramsay's Idiot Sandwich";
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.article-container>main .article-3 > .vid{
+    grid-area: vid;
+    display: flex;
+    flex-direction: column;
+    border: 10px ridge var(--blue);
+    width: 100%;
+}
+
+.article-container>main .article-3 > .vid > iframe{
+    width: 100%;
+}
+
+
+.article-container>main .article-4 {
+    grid-area: article-4;
+    display: grid;
+    background-color: var(--blue);
+    grid-template: repeat(4, 25%);
+    grid-template-areas: 
+    "h h h h"
+    "img1 img1 img2 img2"
+    "img1 img1 img2 img2"
+    "text1 text1 text2 text2"
+    "text1 text1 text2 text2";
+    gap: 50px;
+}
+
+.article-container>main .article-4 h2{
+    text-align: center;
+    grid-area: h;
+}
+
+.article-container>main> .article-4 .img-1 {
+    display: block;
+    border: 5px ridge var(--black);
+    box-shadow: 0 2px 10px 2px var(--black);
+    grid-area: img1;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.article-container>main> .article-4 .img-2{
+    border: 5px ridge var(--black);
+    box-shadow: 0 2px 10px 2px var(--black);
+    grid-area: img2;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.article-container>main .article-4 .text-1{
+    grid-area: text1;
+}
+
+.article-container>main .article-4 .text-2{
+    grid-area: text2;
+}
+
+
+.article-container>main .article-5 {
+    grid-area: article-5;
+    display: grid;
+    background-color: var(--orange);
+    place-items: center;
+    place-content: center;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas: 
+    "h1 h1 h1 h1 h1"
+    "img1 img1 text1 text1 text1"
+    "img1 img1 text1 text1 text1"
+    "vid vid vid vid vid"
+    "vid vid vid vid vid"
+    "h2 h2 img2 img2 img2"
+    "text2 text2 img2 img2 img2"
+    "text2 text2 img2 img2 img2";
+    gap: 20px;
+    
+}
+
+.article-container>main .article-5>.h-1{
+    grid-area: h1;
+    text-align: center;
+    margin: 15px;
+}
+.article-container>main .article-5>.text-1{
+    grid-area: text1;
+    margin: 15px;
+}
+.article-container>main .article-5>.h-2{
+    grid-area: h2;
+    text-align: right;
+    margin: 15px;
+}
+.article-container>main .article-5>.text-2{
+    grid-area: text2;
+    text-align: right;
+    margin: 15px;
+}
+.article-container>main .article-5>.img-1{
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+.article-container>main .article-5>.img-1>img{
+    border: 5px ridge var(--black);
+    box-shadow: 0 2px 10px 2px var(--black);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.article-container>main .article-5>.img-2{
+    grid-area: img2;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.article-container>main .article-5>.img-2>img{
+    background: var(--light-gray);
+    border: 5px ridge var(--black);
+    box-shadow: 0 2px 10px 2px var(--black);
+    max-width: 100%;
+    max-height: 100%;
+}
+.article-container>main .article-5>.vid::before{
+    background: var(--light-gray);
+    font-family: "Saira";
+    text-shadow: -1px 0px 1px#d2d3c999, 1px 0px 1px#d2d3c999;
+    font-weight: bold;
+    content: "Ninong Ry's Humble Beginnings";
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+.article-container>main .article-5>.vid{
+    grid-area: vid;
+    display: flex;
+    flex-direction: column;
+    border: 10px ridge var(--blue);
+    width: 100%;
+}
+.article-container>main .article-5>.vid>iframe{
+    width: 100%;
+}
+
+
+/* End of Articles CSS */

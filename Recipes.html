@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d40a4360f.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/recipes.css">
+    <title>BuzzFood: Recipes</title>
+</head>
+
+<body class="bg-black">
+    <div class="container-fluid">
+        <header class="bg-black">
+            <a href="Home.html" class="text-decoration-none text-center text-white">
+                <h1 class="display-1 logo mb-md-1">BuzzFood</h1>
+            </a>
+        </header>
+
+        <nav class="container-fluid fixed-bottom navbar navbar-expand-md navbar-dark bg-transparent pt-0 pb-2">
+            <button class="navbar-toggler p-1 bg-gray" type="button" data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                aria-labelledby="Toggle Navigation Menu">
+                <span class="p-0">
+                    <img class="img-fluid navbar-toggler-icon p-0" src="./favicon/favicon.ico" alt="burger logo">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse bg-gray justify-content-center" id="toggleMobileMenu">
+                <ul class="navbar-nav nav-pills flex-row gap-sm-0 gap-md-5 justify-content-around align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html" aria-current="page" aria-label="Home Button" title="Home">
+                            <span class="d-none d-md-inline fas fa-home text-center nav-link-label"></span>
+                            <span class="nav-link-label">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Articles.html" class="nav-link" title="Articles">
+                            <span class="d-none d-md-inline fas fa-newspaper text-center nav-link-label"></span>
+                            <span class="nav-link-label">Articles</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Recipes.html" class="nav-link active" title="Recipes">
+                            <span class="d-none d-md-inline fas fa-book text-center nav-link-label"></span>
+                            <span class="nav-link-label">Recipes</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Store.html" class="nav-link" title="Store">
+                            <span class="d-none d-md-inline fas fa-store text-center nav-link-label"></span>
+                            <span class="nav-link-label">Store</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link" title="About">
+                            <span class="d-none d-md-inline fas fa-info-circle text-center nav-link-label"></span>
+                            <span class="nav-link-label text-break">About</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="container-md text-center bg-darkpurple border-purple-solid">
+            <span class="display-5 sub-header text-white-blackshadow">RECIPES</span>
+        </section>
+
+        <main class="d-grid container recipes-container mt-3 mb-5 min-vh-80">
+            <div class="card card-1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Chicken Adobo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, molestias.</p>
+                    <button id="card-1-modal-button" type="button" class="modal-button" data-bs-toggle="modal"
+                        data-bs-target="#card-1-modal">
+                        View Recipe
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="card-1-modal" tabindex="-1" aria-labelledby="card-1-modalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content text-black">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="card-1-modalLabel">Chicken Adobo Recipe</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-adobo">
+                                <div class="bg-gray-75 text-white-blackshadow mb-5">
+                                    <h6 class="display-5">Ingredients:</h6>
+                                    <ul>
+                                        <li>Ingredient 1</li>
+                                        <li>Ingredient 2</li>
+                                        <li>Ingredient 3</li>
+                                        <li>Ingredient 4</li>
+                                        <li>Ingredient 5</li>
+                                        <li>Ingredient 6</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-75 text-white-blackshadow mt-5">
+                                    <h6 class="display-5">Procedure:</h6>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum?
+                                        </li>
+                                        <li>Eligendi nostrum numquam repellendus cupiditate placeat beatae. Ducimus,
+                                            laudantium recusandae.</li>
+                                        <li>Praesentium, pariatur. Doloribus obcaecati quaerat nesciunt, alias fugiat
+                                            corporis nostrum!</li>
+                                        <li>Aperiam rerum totam illo commodi officia culpa dolorum tempore architecto.
+                                        </li>
+                                        <li>Omnis ipsam eos corporis unde ex, iure autem officia debitis!</li>
+                                        <li>Porro dolorum id laboriosam itaque quia quos facilis aspernatur consectetur.
+                                        </li>
+                                        <li>Maxime laboriosam obcaecati explicabo consectetur omnis dolores possimus
+                                            nobis expedita.</li>
+                                        <li>Minus praesentium saepe harum culpa corrupti consequuntur sapiente optio
+                                            esse.</li>
+                                        <li>Ratione minus ipsam modi dicta iure saepe, repellendus adipisci aut.</li>
+                                        <li>Illo maxime repellendus doloribus neque voluptas. Laudantium deleniti libero
+                                            dolor.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-black-whiteshadow">Ginisang Monggo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button id="card-2-modal-button" type="button" class="modal-button" data-bs-toggle="modal"
+                        data-bs-target="#card-2-modal">
+                        View Recipe
+                    </button>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="card-2-modal" tabindex="-1" aria-labelledby="card-2-modalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="card-2-modalLabel">Ginisang Monggo Recipe</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-monggo">
+                                <div class="bg-gray-75 text-white-blackshadow mb-5">
+                                    <h6 class="display-5">Ingredients:</h6>
+                                    <ul>
+                                        <li>Ingredient 1</li>
+                                        <li>Ingredient 2</li>
+                                        <li>Ingredient 3</li>
+                                        <li>Ingredient 4</li>
+                                        <li>Ingredient 5</li>
+                                        <li>Ingredient 6</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-75 text-white-blackshadow mt-5">
+                                    <h6 class="display-5">Procedure:</h6>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum?
+                                        </li>
+                                        <li>Eligendi nostrum numquam repellendus cupiditate placeat beatae. Ducimus,
+                                            laudantium recusandae.</li>
+                                        <li>Praesentium, pariatur. Doloribus obcaecati quaerat nesciunt, alias fugiat
+                                            corporis nostrum!</li>
+                                        <li>Aperiam rerum totam illo commodi officia culpa dolorum tempore architecto.
+                                        </li>
+                                        <li>Omnis ipsam eos corporis unde ex, iure autem officia debitis!</li>
+                                        <li>Porro dolorum id laboriosam itaque quia quos facilis aspernatur consectetur.
+                                        </li>
+                                        <li>Maxime laboriosam obcaecati explicabo consectetur omnis dolores possimus
+                                            nobis expedita.</li>
+                                        <li>Minus praesentium saepe harum culpa corrupti consequuntur sapiente optio
+                                            esse.</li>
+                                        <li>Ratione minus ipsam modi dicta iure saepe, repellendus adipisci aut.</li>
+                                        <li>Illo maxime repellendus doloribus neque voluptas. Laudantium deleniti libero
+                                            dolor.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-black-whiteshadow">Strawberry Cheesecake</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ut similique
+                        consectetur!</p>
+                    <button id="card-3-modal-button" type="button" class="modal-button" data-bs-toggle="modal"
+                        data-bs-target="#card-3-modal">
+                        View Recipe
+                    </button>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="card-3-modal" tabindex="-1" aria-labelledby="card-3-modalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="card-3-modalLabel">Strawberry Cheesecake Recipe</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-strawberry">
+                                <div class="bg-gray-75 text-white-blackshadow mb-5">
+                                    <h6 class="display-5">Ingredients:</h6>
+                                    <ul>
+                                        <li>Ingredient 1</li>
+                                        <li>Ingredient 2</li>
+                                        <li>Ingredient 3</li>
+                                        <li>Ingredient 4</li>
+                                        <li>Ingredient 5</li>
+                                        <li>Ingredient 6</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-75 text-white-blackshadow mt-5">
+                                    <h6 class="display-5">Procedure:</h6>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum?
+                                        </li>
+                                        <li>Eligendi nostrum numquam repellendus cupiditate placeat beatae. Ducimus,
+                                            laudantium recusandae.</li>
+                                        <li>Praesentium, pariatur. Doloribus obcaecati quaerat nesciunt, alias fugiat
+                                            corporis nostrum!</li>
+                                        <li>Aperiam rerum totam illo commodi officia culpa dolorum tempore architecto.
+                                        </li>
+                                        <li>Omnis ipsam eos corporis unde ex, iure autem officia debitis!</li>
+                                        <li>Porro dolorum id laboriosam itaque quia quos facilis aspernatur consectetur.
+                                        </li>
+                                        <li>Maxime laboriosam obcaecati explicabo consectetur omnis dolores possimus
+                                            nobis expedita.</li>
+                                        <li>Minus praesentium saepe harum culpa corrupti consequuntur sapiente optio
+                                            esse.</li>
+                                        <li>Ratione minus ipsam modi dicta iure saepe, repellendus adipisci aut.</li>
+                                        <li>Illo maxime repellendus doloribus neque voluptas. Laudantium deleniti libero
+                                            dolor.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-4">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-black-whiteshadow">Crispy Pata</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <button id="card-4-modal-button" type="button" class="modal-button" data-bs-toggle="modal"
+                        data-bs-target="#card-4-modal">
+                        View Recipe
+                    </button>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="card-4-modal" tabindex="-1" aria-labelledby="card-4-modalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="card-4-modalLabel">Crispy Pata Recipe</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-crispypata">
+                                <div class="bg-gray-75 text-white-blackshadow mb-5">
+                                    <h6 class="display-5">Ingredients:</h6>
+                                    <ul>
+                                        <li>Ingredient 1</li>
+                                        <li>Ingredient 2</li>
+                                        <li>Ingredient 3</li>
+                                        <li>Ingredient 4</li>
+                                        <li>Ingredient 5</li>
+                                        <li>Ingredient 6</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-75 text-white-blackshadow mt-5">
+                                    <h6 class="display-5">Procedure:</h6>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum?
+                                        </li>
+                                        <li>Eligendi nostrum numquam repellendus cupiditate placeat beatae. Ducimus,
+                                            laudantium recusandae.</li>
+                                        <li>Praesentium, pariatur. Doloribus obcaecati quaerat nesciunt, alias fugiat
+                                            corporis nostrum!</li>
+                                        <li>Aperiam rerum totam illo commodi officia culpa dolorum tempore architecto.
+                                        </li>
+                                        <li>Omnis ipsam eos corporis unde ex, iure autem officia debitis!</li>
+                                        <li>Porro dolorum id laboriosam itaque quia quos facilis aspernatur consectetur.
+                                        </li>
+                                        <li>Maxime laboriosam obcaecati explicabo consectetur omnis dolores possimus
+                                            nobis expedita.</li>
+                                        <li>Minus praesentium saepe harum culpa corrupti consequuntur sapiente optio
+                                            esse.</li>
+                                        <li>Ratione minus ipsam modi dicta iure saepe, repellendus adipisci aut.</li>
+                                        <li>Illo maxime repellendus doloribus neque voluptas. Laudantium deleniti libero
+                                            dolor.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-5">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-black-whiteshadow">Butter Garlic Fried Rice</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, molestias.</p>
+                    <button id="card-5-modal-button" type="button" class="modal-button" data-bs-toggle="modal"
+                        data-bs-target="#card-5-modal">
+                        View Recipe
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="card-5-modal" tabindex="-1" aria-labelledby="card-5-modalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bold" id="card-5-modalLabel">Butter Garlic Fried Rice Recipe
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-bgfr">
+                                <div class="bg-gray-75 text-white-blackshadow mb-5">
+                                    <h6 class="display-5">Ingredients:</h6>
+                                    <ul>
+                                        <li>Ingredient 1</li>
+                                        <li>Ingredient 2</li>
+                                        <li>Ingredient 3</li>
+                                        <li>Ingredient 4</li>
+                                        <li>Ingredient 5</li>
+                                        <li>Ingredient 6</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-75 text-white-blackshadow mt-5">
+                                    <h6 class="display-5">Procedure:</h6>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, earum?
+                                        </li>
+                                        <li>Eligendi nostrum numquam repellendus cupiditate placeat beatae. Ducimus,
+                                            laudantium recusandae.</li>
+                                        <li>Praesentium, pariatur. Doloribus obcaecati quaerat nesciunt, alias fugiat
+                                            corporis nostrum!</li>
+                                        <li>Aperiam rerum totam illo commodi officia culpa dolorum tempore architecto.
+                                        </li>
+                                        <li>Omnis ipsam eos corporis unde ex, iure autem officia debitis!</li>
+                                        <li>Porro dolorum id laboriosam itaque quia quos facilis aspernatur consectetur.
+                                        </li>
+                                        <li>Maxime laboriosam obcaecati explicabo consectetur omnis dolores possimus
+                                            nobis expedita.</li>
+                                        <li>Minus praesentium saepe harum culpa corrupti consequuntur sapiente optio
+                                            esse.</li>
+                                        <li>Ratione minus ipsam modi dicta iure saepe, repellendus adipisci aut.</li>
+                                        <li>Illo maxime repellendus doloribus neque voluptas. Laudantium deleniti libero
+                                            dolor.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="blank"><br><br><br></div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+
+.about-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 20px;
+    display: block;
+}
+
+.about-container>header>nav ul>.about a {
+    padding: 0 10%;
+    border: 10px ridge var(--blue);
+}
+
+.about-container>header>nav>ul>.about a:hover {
+    padding: 5px;
+}
+
+
+.about-container>main{
+    font-family: "Saira";
+    position: relative;
+    top: 20%;
+    left: 0;
+    margin: 0;
+    padding: 0 2vw;
+    width: 100vw;
+    place-items: center;
+    place-content: center;
+    background-color: var(--lightgreen);
+    height: auto;
+    display: grid;
+    grid-template-rows: 12vh repeat(3, 1fr) 12vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "gen-info gen-info"
+    "about email"
+    "soc-media soc-media"
+    "blank blank";
+    gap: 20px;
+}
+
+.about-container>main>.title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray);
+    border: 10px ridge var(--black);
+}
+
+.about-container>main>.title>span {
+    font-size: 6vh;
+    font-weight: bolder;
+    font-family: Montserrat;
+    color: var(--black);
+    text-shadow: -2px 0px 10px var(--white), 2px 0px 10px var(--white);
+}
+
+.about-container>main>.about-card>span {
+    font-size: 5vmin;
+    font-weight: bold;
+    font-family: Montserrat;
+    color: var(--black);
+    text-shadow: -2px 0px 10px var(--white), 2px 0px 10px var(--white);
+}
+
+.about-container>main>.about-card> p,label{
+    font-size: 3vmin;
+    font-family: Montserrat;
+    color: var(--black);
+    text-shadow: -1px 0px 3px var(--gray), 1px 0px 3px var(--gray);
+}
+.about-container>main>.about-card{
+    background: var(--light-gray);
+    border: 2px solid var(--black);
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.about-container>main>.about-card-1{
+    grid-area: gen-info;
+    background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-container>main>.about-card-1>.imgs{
+    display: grid;
+    place-items: center;
+    grid-template: 1fr / 20% 80%;
+}
+.about-container>main>.about-card-1>.imgs img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about-container>main>.about-card-2{
+    grid-area: about;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-container>main>.about-card-2>img{
+    
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 50%;
+}
+
+.about-container>main>.about-card-3{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-container>main>.about-card-3>form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-container>main>.about-card-3>form input{
+    height: 10%;
+}
+
+.about-container>main>.about-card-3>form input, textarea{
+    width: 100%;
+    box-shadow: 0 0 5px var(--black);
+}
+
+.about-container>main>.about-card-3>form button{
+    align-self: center;
+    font-size: 2.5vmin;
+    width: 50%;
+    height: 20%;
+    background-color: var(--lightblue);
+    border: 0;
+    box-shadow: 0 0 10px 2px var(--black);
+}
+
+.about-container>main>.about-card-3>form button:focus,
+.about-container>main>.about-card-3>form button:hover{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.about-container>main>.about-card-4{
+    grid-area: soc-media;
+}
+.about-container>main>.about-card-4 ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .about-container>main>.about-card-4 ul > li{
+ 
+} */
+
+.about-container>main>.about-card-4 > ul > li > .icon >img{
+    border-radius: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about-container>main>.about-card-4 > ul > li > .icon:hover >img{
+    opacity: 0.7;
+}
+
+
+.about-container>main>.blank{
+    grid-area: blank;
+    background-color: var(--lightgreen);
+    width: 100%;
+    height: 100%;
+}

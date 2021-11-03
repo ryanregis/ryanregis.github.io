@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d40a4360f.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/global.css">
+
+    <title>BuzzFood: About</title>
+</head>
+
+<body class="bg-black">
+    <header class="bg-black">
+        <a href="Home.html" class="text-decoration-none text-center text-white">
+            <h1 class="display-1 logo mb-md-1">BuzzFood</h1>
+        </a>
+    </header>
+
+    <nav class="container-fluid fixed-bottom navbar navbar-expand-md navbar-dark bg-transparent pt-0 pb-2">
+        <button class="navbar-toggler p-1 bg-gray" type="button" data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+            aria-labelledby="Toggle Navigation Menu">
+            <span class="p-0">
+                <img class="img-fluid navbar-toggler-icon p-0" src="./favicon/favicon.ico" alt="burger logo">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse bg-gray justify-content-center" id="toggleMobileMenu">
+            <ul class="navbar-nav nav-pills flex-row gap-sm-0 gap-md-5 justify-content-around align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html" aria-current="page" aria-label="Home Button" title="Home">
+                        <span class="d-none d-md-inline fas fa-home text-center nav-link-label"></span>
+                        <span class="nav-link-label">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Articles.html" class="nav-link" title="Articles">
+                        <span class="d-none d-md-inline fas fa-newspaper text-center nav-link-label"></span>
+                        <span class="nav-link-label">Articles</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Recipes.html" class="nav-link" title="Recipes">
+                        <span class="d-none d-md-inline fas fa-book text-center nav-link-label"></span>
+                        <span class="nav-link-label">Recipes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Store.html" class="nav-link" title="Store">
+                        <span class="d-none d-md-inline fas fa-store text-center nav-link-label"></span>
+                        <span class="nav-link-label">Store</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link active" title="About">
+                        <span class="d-none d-md-inline fas fa-info-circle text-center nav-link-label"></span>
+                        <span class="nav-link-label text-break">About</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-md text-center bg-light-gray border-gray-ridge">
+        <span class="display-5 sub-header text-black-whiteshadow">ABOUT</span>
+    </section>
+    
+    <main class="container p-4">
+        <div class="accordion" id="about-accordion">
+
+            <div class="accordion-item bg-lightblue">
+                <h2 class="accordion-header" id="aboutAccordion-headingOne">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#aboutAccordion-collapseOne" aria-expanded="false"
+                        aria-controls="aboutAccordion-collapseOne">
+                        About BuzzFood <span class="ms-2 fas fa-hamburger"></span>
+                    </button>
+                </h2>
+                <div id="aboutAccordion-collapseOne" class="accordion-collapse collapse"
+                    aria-labelledby="aboutAccordion-headingOne">
+                    <div class="accordion-body">
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <img class="p-0 mx-2" width="50px" src="./images/burgerLogo.png" alt="burger logo">
+                            <h1 class="display-4 logo mb-md-1">BuzzFood</h1>
+                        </div>
+
+                        <p class="text-center">
+                            <b><i>BuzzFood</i></b>&nbsp; is a mock online magazine of
+                            <a href="https://www.buzzfeed.com/" type="button"
+                                class="text-decoration-none p-1 bg-red text-white-blackshadow">BuzzFeed.com</a>
+                            <br> But instead of tackling trendy modern general topics, <b><i>BuzzFood</i></b>&nbsp;
+                            represents current events about the food world and some popular delicious recipes.
+                        </p>
+                        <p class="text-center fw-bolder">
+                            This responsive online magazine is created by <u>Ryan Gerome Regis</u> as the first
+                            mini-project for the Batch 3 of KodeGo Web Development Bootcamp.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item bg-lightgreen">
+                <h2 class="accordion-header" id="aboutAccordion-headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#aboutAccordion-collapseTwo" aria-expanded="false"
+                        aria-controls="aboutAccordion-collapseTwo">
+                        About the creator <span class="ms-2 fas fa-portrait"></span>
+                    </button>
+                </h2>
+                <div id="aboutAccordion-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="aboutAccordion-headingTwo">
+                    <div class="accordion-body d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <img src="./images/ProfPic.png" alt="Creator Profile Pic"
+                            class="img-fluid img-thumbnail border-circle w-50">
+                        <p class="p-1 my-4 text-white text-center">Hi! My name is <strong>Ryan Gerome
+                                Regis</strong>, I graduated as a Bachelor of Science in Electronics Engineering Student at
+                            UE Caloocan back in 2020. My main focus was in embedded software engineering which is both slightly
+                            different and the same from Web Developing.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="accordion-item bg-purple">
+                <h2 class="accordion-header" id="aboutAccordion-headingThree">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#aboutAccordion-collapseThree" aria-expanded="false"
+                        aria-controls="aboutAccordion-collapseThree">
+                        Contact and Feedback <span class="ms-2 fas fa-envelope-square"></span>
+                    </button>
+                </h2>
+                <div id="aboutAccordion-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="aboutAccordion-headingThree">
+                    <div class="accordion-body p-1">
+                        <div class="border-darkpurple-solid p-1 m-3">
+                            <h5 class="text-center fw-bold">Follow me on Social Media</h5>
+                            <ul class="social list-unstyled d-flex justify-content-evenly align-items-center">
+                                <li><a href="#" class="icon twitter"><img class="border-circle" src="./images/twttr.png"
+                                            alt="twitter logo" width="50" height="50"></a></li>
+                                <li><a href="#" class="icon facebook"><img class="border-circle" src="./images/fb.png"
+                                            alt="fb logo" width="50" height="50"></a></li>
+                                <li><a href="#" class="icon github"><img class="border-circle" src="./images/ghub.png"
+                                            alt="github logo" width="50" height="50"></a></li>
+                                <li><a href="#" class="icon instagram"><img class="border-circle" src="./images/ig.png"
+                                            alt="ig logo" width="50" height="50"></a></li>
+                            </ul>
+                        </div>
+                        <div class="border-darkblue-ridge p-1 m-3">
+                            <h5 class="text-center fw-bold">Have some feedback? Send me an email!</h5>
+                            <form><br>
+                                <div class="mb-3">
+                                    <label for="nameArea" class="form-label fw-bold">Enter Name:</label>
+                                    <input type="name" class="form-control" id="nameArea"
+                                        placeholder="Enter name here...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="feedbackArea" class="form-label fw-bold">Enter Feedback:</label>
+                                    <textarea class="form-control" id="feedbackArea" rows="3"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button type="submit" name="send" value="#" class="btn btn-success">Send
+                                        Feedback</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
